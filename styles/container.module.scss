@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    background: var(--card-bg);
+    width: 90%;
+    max-width: 40rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem var(--card-shadow);
+    flex-direction: column;
+    display: flex;
+  }
+}

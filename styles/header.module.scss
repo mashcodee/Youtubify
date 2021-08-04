@@ -1,0 +1,33 @@
+.header {
+  width: 100%;
+  height: clamp(6rem, 20vh, 8rem);
+  display: flex;
+  padding-inline: clamp(1.5rem, 5vw, 4rem);
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    img {
+      width: clamp(3.5rem, 5vw, 5rem);
+      height: clamp(3.5rem, 5vw, 5rem);
+    }
+    span {
+      font-size: clamp(3rem, 5vw, 5rem);
+      color: var(--color);
+      padding: 0 1rem;
+      font-weight: 600;
+    }
+  }
+  .themeBtn {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color);
+    cursor: pointer;
+  }
+}

@@ -6,10 +6,8 @@ const getDownloadLink = async (
   title: string;
   msg: string;
 } | null> => {
-  console.log(process.env.API_KEY);
-  console.log(process.env.API_HOST);
   try {
-    const res = await fetch(`https://youtube-mp36.p.rapidapi.com/dl?id=${id}`, {
+    const res = await fetch(process.env.API_ENDPOINT + id, {
       method: "GET",
       headers: {
         "x-rapidapi-key": process.env.API_KEY!,

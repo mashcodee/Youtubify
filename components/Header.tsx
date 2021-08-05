@@ -13,9 +13,16 @@ const Header: FC<Props> = (props) => {
     setDarkTheme(!darkTheme);
   };
   useEffect(() => {
-    setDarkTheme(
-      localStorage.getItem("youtubify-theme") === "dark" ? true : false
-    );
+    if (localStorage.getItem("youtubify-theme")) {
+      setDarkTheme(
+        localStorage.getItem("youtubify-theme") === "dark" ? true : false
+      );
+    } else {
+      const userPreferedTheme = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      setDarkTheme(userPreferedTheme);
+    }
   }, []);
 
   return (

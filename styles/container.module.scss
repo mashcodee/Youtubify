@@ -8,10 +8,10 @@
   .card {
     background: var(--card-bg);
     width: 90%;
-    max-width: 40rem;
-    padding: 2rem;
-    border-radius: 2rem;
-    box-shadow: 0.2rem 0.2rem 0.5rem var(--card-shadow);
+    max-width: 20rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem var(--card-shadow);
     flex-direction: column;
     display: flex;
   }

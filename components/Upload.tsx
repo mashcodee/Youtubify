@@ -28,6 +28,9 @@ const Upload: FC<Props> = ({ setVideoTitle, setLink, setIsUploaded }) => {
         uploadBtn.current.innerHTML = "convert";
         alert(data.msg);
       }
+    } else {
+      setVideoId("");
+      uploadBtn.current.innerHTML = "convert";
     }
   };
 

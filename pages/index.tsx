@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import Head from "next/head";
+import { NextPage } from "next";
 import Header from "../components/Header";
 import Container from "../components/Container";
 import { themeSetup } from "../utils/themeSetup";
 import styles from "../styles/index.module.scss";
 
-export default function Home() {
+const Home: NextPage = () => {
   useEffect(() => {
     themeSetup();
   }, []);
@@ -16,4 +16,6 @@ export default function Home() {
       <Container />
     </div>
   );
-}
+};
+
+export default Home;

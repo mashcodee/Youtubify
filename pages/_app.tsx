@@ -14,10 +14,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
         />
         <meta
-          name="description"
-          content="Instantly extract audio from any youtube video"
-        />
-        <meta
           name="keywords"
           content="youtube download,yt mp3,youtube mp3 downloader"
         />

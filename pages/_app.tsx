@@ -6,14 +6,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Youtubify</title>
-        <link
-          href="/images/logo.png"
-          rel="icon"
-          type="image/png"
-          sizes="512x512"
+        <link rel="shortcut icon" href="/images/logo.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/images/logo.ico" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
         />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta
           name="description"
           content="Instantly extract audio from any youtube video"
@@ -22,7 +21,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="keywords"
           content="youtube download,yt mp3,youtube mp3 downloader"
         />
-        <link rel="apple-touch-icon" href="/images/logo.png"></link>
       </Head>
       <Component {...pageProps} />
     </>

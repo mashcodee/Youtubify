@@ -24,7 +24,7 @@ const Download: FC<Props> = ({
 
   return (
     <>
-      <div className={styles.title}>{videoTitle}</div>
+      <h1 className={styles.title}>{videoTitle}</h1>
       <a href={link} onClick={() => downloadVideo()}>
         <button className={styles.download}>Download</button>
       </a>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/header.module.scss";
 import logo from "../public/images/logo.svg";
 import { switchTheme } from "../utils/themeSetup";
+import Logo from "./Logo";
 
 interface Props {}
 
@@ -28,7 +29,7 @@ const Header: FC<Props> = (props) => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <Image src={logo} alt="logo"></Image>
+        <Logo></Logo>
         <span>Youtubify</span>
       </div>
       <div onClick={changeTheme} className={styles.themeBtn} id="themeBtn">

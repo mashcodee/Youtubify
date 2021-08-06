@@ -47,7 +47,6 @@ const Upload: FC<Props> = ({ setVideoTitle, setLink, setIsUploaded }) => {
         <input
           type="text"
           placeholder="video id"
-          maxLength={11}
           minLength={11}
           value={videoId}
           onChange={(e) => setVideoId(e.target.value)}
